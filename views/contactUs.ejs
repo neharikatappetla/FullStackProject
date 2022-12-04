@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body{ 
+        height:100vh;
+        width:100vw;
+        margin:0px;
+        background-image: url("https://www.aarohies.com/wp-content/uploads/2020/05/contactus-background.jpg");
+        
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    h1{
+        padding-left: 25px;
+    }
+    input[type=text],input[type=email],textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+    input[type=submit]{
+        padding: 5px 12px;
+        background-color: forestgreen;
+        color:white;
+    }
+    input[type=submit]:hover{
+        background-color:limegreen;
+    }
+    .contact{
+        padding:25px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <div class="contact">
+        <form>
+            <label for="Name">Name</label>
+            <input type="text" name="Name" placeholder="Your Name">
+
+            <label>Email</label>
+            <input type="email" name="E-mail" placeholder="Registered Email">
+
+            <label>Message</label>
+            <textarea style="height: 200px;" placeholder="Your message"></textarea>
+
+            <input type="submit">
+        </form>
+
+    </div>
+</body>
+</html>

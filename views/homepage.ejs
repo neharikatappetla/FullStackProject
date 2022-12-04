@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: antiquewhite;
+            }
+            .navbar{
+                display: flex;
+                align-items: center;
+                padding: 20px;
+            }
+
+            nav{
+                flex: 1;
+                text-align: right;
+            }
+
+            nav ul{
+                display: inline-block;
+                list-style-type: none;
+            }
+
+            nav ul li{
+                display: inline-block;
+                margin-right: 20px;
+            }
+            a{
+                text-decoration: none;
+                color: #555;
+            }
+
+            p{
+                color: #555;
+            }
+
+            .container{
+                max-width: 1300px;
+                margin: auto;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            .header .row{
+                margin-top: 70px;
+            }
+
+            .categories{
+                margin: 70px 0 20px 70px;
+                
+            }
+
+            .imgBor {
+            border: 5px solid #555;
+            
+            }
+
+            .col-3{
+                min-width: 250px;
+                margin-bottom: 30px;
+                float: left;
+                width: 33.33%;
+            }
+
+            figcaption{
+                font-size: 50px;
+            }
+            h1{
+                font-size: 50px;
+                text-align: center;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Farmer Store</h1>
+            
+            <div class = "navbar">
+                <div >
+                    <img src = "https://i.pinimg.com/originals/27/4c/3a/274c3ad7626992dde987d15a8a84064d.png" height = "125px">
+                    
+                    <h4>A Store for farmers</h4>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href= "http://localhost:3000/aboutus">About us</a></li>
+                        <li><a href= "http://localhost:3000/contactus">Contact</a></li>
+                        <li><a href= "http://localhost:3000">log out</a></li>
+                        <li><a href= "http://localhost:3000/cart"><img src = "https://cdn-icons-png.flaticon.com/512/1413/1413908.png" width="30px" height="30px"/></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+
+
+
+        <!--featured categories-->
+
+        <div class="categories">
+            <div class="row">
+                <div class = "col-3">
+                    <figure>
+                        <a href="http://localhost:3000/tools">
+                        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOQmbgqTgQnxjVAEfEk2azInvmR1nCeC1TYg&usqp=CAU" height="300px"></a>
+                        <figcaption>TOOLS</figcaption>
+                    </figure>
+                </div>
+
+                <div class = "col-3">
+                    <figure>
+                        <a href="http://localhost:3000/seeds">
+                        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBvrRarnQoM3lUySIvSVdE51t4jMVw1fo1_Q&usqp=CAU" height="300px"></a>
+                        <figcaption>SEEDS</figcaption>
+                    </figure>
+                    
+                </div>
+
+                <div class = "col-3">
+                    <figure>
+                        <a href="http://localhost:3000/fertilizers">
+                        <img src = "https://t3.ftcdn.net/jpg/04/97/74/32/360_F_497743252_bsKjungNT9cOmN9lwqvEPRzW7hYcy9Q2.jpg" height="300px"></a>
+                        <figcaption>FERTILIZERS</figcaption>
+                    </figure>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class = "col-3">
+                    <figure>
+                        <a href="http://localhost:3000/jutebag">
+                        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZ_bAyw3m_IVTK_aDgYPEO8ozXaJw9U9HhcwV_ZOte8Pwn-eYz1R0mqJpiCnBb5EBBc4&usqp=CAU" height="300px"></a>
+                        <figcaption>JUTE BAGS</figcaption>
+                    </figure>
+                </div>
+
+                <div class = "col-3">
+                    <figure>
+                        <a href="http://localhost:3000/org_fertilizers">
+                        <img src = "https://img.freepik.com/premium-vector/organic-fertilizer-logo-design-with-illustration-thriving-seeds_567423-5.jpg" height="300px"></a>
+                        <figcaption>ORGANIC FERTILIZERS</figcaption>
+                    </figure>
+                </div>
+
+                <div class = "col-3">
+                    <figure>
+                        <a href="http://localhost:3000/vermicompost">
+                        <img src = "https://rukminim1.flixcart.com/image/416/416/kbl4cy80/soil-manure/w/q/5/5-vermicompost-jaipur-agrigold-original-imafsvswuszgvee2.jpeg" height="300px"></a>
+                        <figcaption>VERMI COMPOST</figcaption>
+                    </figure>
+                </div>
+                
+            </div>
+
+        </div>
+    </body>
+
+</html>

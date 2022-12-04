@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: antiquewhite;
+            }
+            .navbar{
+                display: flex;
+                align-items: center;
+                padding: 20px;
+            }
+            nav{
+                flex: 1;
+            }
+            nav ul{
+                display: inline-block;
+                list-style-type: none;
+            }
+            nav ul li{
+                display: inline-block;
+                margin-right: 20px;
+            }
+            .anc{
+                text-decoration: none;
+                color: #555;
+            }
+
+            p{
+                color: #555;
+            }
+            .container{
+                max-width: 1300px;
+                margin: auto;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            .header .row{
+                margin-top: 70px;
+            }
+            .small-container{
+                max-width: 1080px;
+                margin: 60px;
+                padding: 25px;
+                padding-right: 25px;
+            }
+            .col{
+                margin-bottom: 50px;
+                padding: 10px;
+                transition: transform 0.5s;
+            }
+            .col img{
+                height: 250px;
+            }
+            .title{
+                text-align: center;
+                margin: 0 auto 80px;
+                position: relative;
+                line-height: 60px;
+                color: #555;
+            }
+            h4{
+                color: #555;
+                
+            }
+            .col p{
+                font-size: 20px;
+            }
+            .rating .fa{
+                color:  #ff523b;
+            }
+            .col:hover{
+                transform: translateY(-5px);
+            }
+            .btn{
+                font-size: 20px;
+                border: 2px solid #1f1c1b;
+                width: 120px;
+                height: 40px;
+                text-align: center;
+                line-height: 20px;
+                cursor: pointer;
+            }
+            .btn:hover{
+                background: #ff523b;
+                color: #fff;
+            }
+            h4{
+                margin: 20px 0;
+                font-size: 22px;
+                font-weight: bold;
+            }
+            select{
+                display: block;
+                padding: 10px;
+                margin-top: 20px;
+            }
+            input{
+                width: 50px;
+                height: 40px;
+                padding-left: 10px;
+                font-size: 30px;
+                margin-right: 10px;
+                border: 1px solid #ff523b;
+            }
+            input:focus{
+                outline: none;
+            }
+            @media only screen and (max-width: 600px){
+                .row{
+                    text-align: center;
+                }
+                .col{
+                    flex-basis: 100%;
+                }
+                .single-product .row{
+                    text-align: left;
+                }
+                .single-product{
+                    padding: 20px 0;
+                }
+                .single-product h1{
+                    font-size: 25px;
+                    line-height: 22px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">  
+            <div style="text-align: right;" class = "navbar">
+                <div >
+                    <img src = "https://i.pinimg.com/originals/27/4c/3a/274c3ad7626992dde987d15a8a84064d.png" height = "125px">
+                    <h4>A Store for farmers</h4>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href= "http://localhost:3000/aboutus"  class="anc">About us</a></li>
+                        <li><a href= "http://localhost:3000/contactus" class="anc">Contact</a></li>
+                        <li><a href= "" class="anc">Account</a></li>
+                        <li><a href= "http://localhost:3000" class="anc">log out</a></li>
+                        <li><a href= "http://localhost:3000/cart" class="anc"><img src = "https://cdn-icons-png.flaticon.com/512/1413/1413908.png" width="30px" height="30px"/></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="small-container">
+            <h1 class="title">Organic Fertilizers</h1>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAB-WuaqGgUEEdmwvkuJU5XElwm1V2XQy9Jg&usqp=CAU">
+
+                        <nav>
+                        <p style="padding: 20px;">
+                            Name : Manure<br>
+                            Price : 150 Rs/- per kg<br><br>
+                            Description: It is made from animal excreta(cow dung & goat droppings). Cattle Manure is a good source of nitrogen and 
+                            organic carbon while goat manure is rich in nitrogen and potash.<br>
+                        </p>
+                        </nav>
+                        
+                        <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                    
+                        <div>
+                          <form action="addToCart" method ="GET">
+                            COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="150/-">
+                        </div>
+                            <input type="number" value="1" name="nm"><br>
+                            <button type="submit" class="btn btn-outline-success" name="item" value ="manure">Add to cart</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiyQ-cT8TlCbjQpaRtoyKyL-sz-Sw2nyR3Nw&usqp=CAU">
+
+                        <nav>
+                        <p style="padding: 20px;">
+                            Name : Compost<br>
+                            Price : 250 Rs/- per kg<br><br>
+                            Description: It is organic matter decomposed through composting. The organic matter used here can be vegetable and plant waste, animal excreta.<br>
+                        </p>
+                        </nav>
+                        
+                        <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    
+                        <div>
+                          <form action="addToCart" method ="GET">
+                            COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="250/-">
+                        </div>
+                            <input type="number" value="1" name="nm"><br>
+                            <button type="submit" class="btn btn-outline-success" name="item" value ="compost">Add to cart</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/DY/KS/HV/4261710/rock-phosphate-28-32--1000x1000.jpg">
+
+                        <nav>
+                        <p style="padding: 20px;">
+                            Name : Rock Phospate<br>
+                            Price : 240 Rs/- per kg<br><br>
+                            Description: It is sedimentary rock which contains high amount of phosphate minerals. It is used naturally to fix phosphate levels of soil.<br>
+                        </p>
+                        </nav>
+                        
+                        <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                    
+                        <div>
+                          <form action="addToCart" method ="GET">
+                            COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="240/-">
+                        </div>
+                            <input type="number" value="1" name="nm"><br>
+                            <button type="submit" class="btn btn-outline-success" name="item" value ="rock-phosphate">Add to cart</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgQfnQl45sIbt-45c044jl_suHdDKQROB9A&usqp=CAU">
+
+                        <nav>
+                        <p style="padding: 20px;">
+                            Name : Chicken Litter<br>
+                            Price : 80 Rs/- per kg<br><br>
+                            Description: It consists of chicken manure and sawdust. It has high levels of nitrogen and potash.
+                            Consider superior for conditioning of soil for harvest than chemical fertilizers.<br>
+                        </p>
+                        </nav>
+                        
+                        <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                    
+                        <div>
+                          <form action="addToCart" method ="GET">
+                            COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="80/-">
+                        </div>
+                            <input type="number" value="1" name="nm"><br>
+                            <button type="submit" class="btn btn-outline-success" name="item" value ="chicken-litter">Add to cart</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnu7vbFQbJQQsayk5RWV--rEC9w_qrnKnCRQ&usqp=CAU">
+
+                        <nav>
+                        <p style="padding: 20px;">
+                            Name : Bone Meal<br>
+                            Price : 195 Rs/- per kg<br><br>
+                            Description: It is a mix of ground slaughter house waste products like animal bones.
+                            It is a very good source of phosphorous and amino acids. Being organic it is also a slow release fertilizer.<br>
+                        </p>
+                        </nav>
+                        
+                        <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                    
+                        <div>
+                          <form action="addToCart" method ="GET">
+                            COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="195/-">
+                        </div>
+                            <input type="number" value="1" name="nm"><br>
+                            <button type="submit" class="btn btn-outline-success" name="item" value ="bone-meal">Add to cart</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://m.media-amazon.com/images/I/61vM2KsOMcL._SX522_.jpg">
+
+                        <nav>
+                        <p style="padding: 20px;">
+                            Name : Blood Meal<br>
+                            Price : 270 Rs/- per kg<br><br>
+                            Description: It is a dried form of animal blood. It helps to increase the nitrogen content in the soil and make plants dense.
+                            The release of nitrogen quickly boosts flowering and acts as a natural insect repellent.<br>
+                        </p>
+                        </nav>
+                        
+                        <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
+                    
+                        <div>
+                          <form action="addToCart" method ="GET">
+                            COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="270/-">
+                        </div>
+                            <input type="number" value="1" name="nm"><br>
+                            <button type="submit" class="btn btn-outline-success" name="item" value ="blood-meal">Add to cart</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_zyPXhK9CgatvhmgJPH_fQ8-nOHSdUdAPPw&usqp=CAU">
+
+                        <nav>
+                        <p style="padding: 20px;">
+                            Name : Fish Emulsion<br>
+                            Price : 260 Rs/- per kg<br><br>
+                            Description: This mixture of finely decomposed fish provides a lot of nitrogen. It acts as a soil conditioner.
+                            But be careful. Fish milk is very acidic, and excessive use can burn plants.<br>
+                        </p>
+                        </nav>
+                        
+                        <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                    
+                        <div>
+                          <form action="addToCart" method ="GET">
+                            COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="260/-">
+                        </div>
+                            <input type="number" value="1" name="nm"><br>
+                            <button type="submit" class="btn btn-outline-success" name="item" value ="fish-emulsion">Add to cart</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://th.bing.com/th/id/OIP.EzQhnNiyFhJXErVBDAcaaAHaJ4?w=147&h=196&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+
+                        <nav>
+                        <p style="padding: 20px;">
+                            Name : Cotton seed meal<br>
+                            Price : 200 Rs/- per kg<br><br>
+                            Description: It is a good source of nitrogen and small amounts of phosphorus and potassium.
+                            It can be an excellent organic lawn fertilizer and is mainly used to cover garden soil and to adjust the soil environment.<br>
+                        </p>
+                        </nav>
+                        
+                        <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                    
+                        <div>
+                          <form action="addToCart" method ="GET">
+                            COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="200/-">
+                        </div>
+                            <input type="number" value="1" name="nm"><br>
+                            <button type="submit" class="btn btn-outline-success" name="item" value ="cotton-sead-meal">Add to cart</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

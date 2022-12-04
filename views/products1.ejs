@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: antiquewhite;
+            }
+            .navbar{
+                display: flex;
+                align-items: center;
+                padding: 20px;
+            }
+
+            nav{
+                flex: 1;
+            }
+
+            nav ul{
+                display: inline-block;
+                list-style-type: none;
+            }
+
+            nav ul li{
+                display: inline-block;
+                margin-right: 20px;
+            }
+            .anc{
+                text-decoration: none;
+                color: #555;
+            }
+
+            p{
+                color: #555;
+            }
+
+            .container{
+                max-width: 1300px;
+                margin: auto;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            .header .row{
+                margin-top: 70px;
+            }
+
+            .small-container{
+                max-width: 1080px;
+                margin: 60px;
+                padding: 25px;
+                padding-right: 25px;
+            }
+
+            .col{
+                margin-bottom: 50px;
+                padding: 10px;
+                transition: transform 0.5s;
+            }
+            .col img{
+                height: 250px;
+            }
+
+            .title{
+                text-align: center;
+                margin: 0 auto 80px;
+                position: relative;
+                line-height: 60px;
+                color: #555;
+            }
+
+            h4{
+                color: #555;
+                
+            }
+
+            .col p{
+                font-size: 20px;
+            }
+
+            .rating .fa{
+                color:  #ff523b;
+            }
+            
+            .col:hover{
+                transform: translateY(-5px);
+            }
+
+            .btn{
+                font-size: 20px;
+                border: 2px solid #1f1c1b;
+                width: 120px;
+                height: 40px;
+                text-align: center;
+                line-height: 20px;
+                cursor: pointer;
+            }
+
+            
+
+            .btn:hover{
+                background: #ff523b;
+                color: #fff;
+            }
+
+            
+
+            
+
+            h4{
+                margin: 20px 0;
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            select{
+                display: block;
+                padding: 10px;
+                margin-top: 20px;
+            }
+
+            input{
+                width: 50px;
+                height: 40px;
+                padding-left: 10px;
+                font-size: 30px;
+                margin-right: 10px;
+                border: 1px solid #ff523b;
+            }
+
+            input:focus{
+                outline: none;
+            }
+
+            
+
+
+            @media only screen and (max-width: 600px){
+                .row{
+                    text-align: center;
+                }
+                .col{
+                    flex-basis: 100%;
+                }
+                .single-product .row{
+                    text-align: left;
+                }
+                .single-product{
+                    padding: 20px 0;
+                }
+                .single-product h1{
+                    font-size: 25px;
+                    line-height: 22px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">  
+            <div style="text-align: right;" class = "navbar">
+                <div >
+                    <img src = "https://i.pinimg.com/originals/27/4c/3a/274c3ad7626992dde987d15a8a84064d.png" height = "125px">
+                    <h4>A Store for farmers</h4>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href= "http://localhost:3000/aboutus"  class="anc">About us</a></li>
+                        <li><a href= "http://localhost:3000/contactus" class="anc">Contact</a></li>
+                        <li><a href= "" class="anc">Account</a></li>
+                        <li><a href= "http://localhost:3000" class="anc">log out</a></li>
+                        <li><a href= "" class="anc"><img src = "https://cdn-icons-png.flaticon.com/512/1413/1413908.png" width="30px" height="30px"/></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        
+        
+        <div class="small-container">
+            <h1 class="title">JUTE BAGS</h1>
+
+            <form action = "cart" method = "GET">
+                    <center><input type = "submit" class = "btn btn-outline-success" style = "color: white; width:50%; font-weight:bold; background-color: green;" value = "GO TO CART"></center>
+                </form>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://4.imimg.com/data4/BL/JB/MY-4839144/jute-gunny-bag-250x250.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            Price : 50 Rs/- per sack <br>
+                            Description: Brown Agricultural Jute BagGet Latest Price <br>
+                            Color : Brown <br>
+                            Capacity : 10kg <br>
+                            Type : Packaging Bags <br>
+                            In order to keep pace with never ending demands of the customers, our company is instrumental in offering Agricultural Jute Bag.</p></nav>
+                        
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="50/-"></div>
+                    <input type="number" name ="quantity "value="0"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Jute Bag">Add to cart</button></form></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://m.media-amazon.com/images/I/51RYqXpq1+L._SX679_.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            Price: 334 Rs/- <br>
+                            Description: RSR Jute Gunny Bag, Empty Sack, Packet for Packing Food Grains and Vegetables (Capacity 50 KG Brown) - Pack of 2<br>
+                            Brand	: Generic <br>
+                            Material: JUTE <br>
+                            Closure Type:  Twist Tie <br>
+                            Colour	: BROWN <br>
+                            Number of Pieces : 2 <br>
+                            Capacity	: 50kg <br>
+                            Reusability	 :Reusable <br>
+
+                            USED FOR PACKING OF RICE , WHEAT ,NUT, PEANUTS, BEANS ETC</p></nav>
+                        
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="334/-"></div>
+                    <input type="number" value="0"><br>
+                    <button type="submit" class="btn btn-outline-success" name="item" value ="Jute Bag1">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://m.media-amazon.com/images/I/41BBRFTpUXS._SX679_.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            Price: 226 Rs/- per piece <br>
+                            Size : 19 * 34 Inches  <br>
+                            Material :	Polypropylene <br>
+                            Capacity :	25 Kilograms <br>
+                            Closure Type : Twist Tie <br>
+                            Number of Items	: 10 <br>
+                            Product Dimensions: 86.4W x 48.3H Centimeters <br>
+                            Colour	:                 WHITE <br>
+                            Number of Pieces:  10 <br>
+                            Jainy Creations Empty HDPE White Bag, Bora, Bori for Packing of Foods, Vegatable, Grains, Wheat, Rice, Sugar Etc Products</p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div>
+                    <form action="addToCart" method="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="226/-"></div>
+                    <input type="number" value="0"><br>
+                    <button type="submit" class="btn btn-outline-success" name="item" value ="Jute Bag2">Add to cart</button></form></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://m.media-amazon.com/images/I/51RYqXpq1+L._SX679_.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            Price: 189 Rs/- <br>
+                            Description: RSR Jute Gunny Bag, Empty Sack, Packet for Packing Food Grains and Vegetables (Capacity 50 KG Brown) - Pack of 2<br>
+                            Brand	: Generic <br>
+                            Material: JUTE <br>
+                            Closure Type:  Twist Tie <br>
+                            Colour	: BROWN <br>
+                            Number of Pieces : 2 <br>
+                            Capacity	: 100kg <br>
+                            Reusability	 :Reusable <br>
+
+                            USED FOR PACKING OF RICE , WHEAT ,NUT, PEANUTS, BEANS ETC</p></nav>
+                        
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action ="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="189/-"></div>
+                    <input type="number" value="0"><br>                    
+                    <button type="submit" class="btn btn-outline-success" name="item" value ="Jute Bag3">Add to cart</button></form></div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

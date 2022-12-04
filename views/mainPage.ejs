@@ -1,0 +1,119 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+        <style>
+            .webname{
+                
+                color: green;
+                background-color: greenyellow;
+                text-align: center;
+                
+           }
+           body{
+            background-image: url("https://t3.ftcdn.net/jpg/04/71/21/98/240_F_471219854_ET7CgcFUXpp2OIS8p7FMHuiB4m0vvUMw.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            
+           }
+           h2{
+
+
+            margin-top: 0%;
+            color: transparent;
+            font-size: xx-large;
+            position: relative;
+            display: inline-block;
+            animation:  text_reveal 2.5s ease forwards;
+            animation-delay: 1s;
+           }
+
+           h2 span{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: antiquewhite;
+            animation: overlay 5s ease forwards;
+            
+           }
+
+           @keyframes overlay{
+              50%{
+                width: 100%;
+                left:0;
+
+              }   
+              100%{
+                width: 0;
+                left: 100%;
+                
+              }     
+           }
+
+           @keyframes text_reveal {
+            100%{
+                color:rgb(23, 13, 128);
+            }
+           }
+
+           .button{
+                height:50px;
+                width:100px;
+                position:absolute;
+                right:0;
+                
+            }
+            .b1{
+                margin-right: 250px;
+                top: 80px;
+            }
+
+            .b2{
+                margin-right: 125px;
+                top: 80px;
+            }
+
+            .b3{
+                margin-right: 2px;
+                top: 80px;
+            }
+
+            h3{
+                position:absolute;
+                right:0;
+                margin-right: 600px;
+                top: 80px;
+                font-size: x-large;
+
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1 class = "webname">Farmer Store </h1>
+        <h2 >A Store for farmers ......<span></span></h2>
+        <h3>WELCOME</h3>
+        
+        <a href="http://localhost:3000/aboutus" >
+            <button type="button" class="button b1" name="aboutus" >About us</button>
+        </a>
+        
+        <a href ="http://localhost:3000/loginpage" >
+            <button type="button" class="button b2" name="login">Log in</button>
+        </a>
+        <a href ="http://localhost:3000/signup">
+            <button type="button" class="button b3" name="signin">Sign up
+
+            </button>
+        </a>
+        <br>
+
+        <img src = "https://img.freepik.com/free-vector/shop-with-sign-we-are-open_52683-38687.jpg?w=2000" style="height: 250px;">
+        
+    </body>
+    
+</html>

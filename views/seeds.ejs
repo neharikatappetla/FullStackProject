@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: antiquewhite;
+            }
+            .navbar{
+                display: flex;
+                align-items: center;
+                padding: 20px;
+            }
+
+            nav{
+                flex: 1;
+            }
+
+            nav ul{
+                display: inline-block;
+                list-style-type: none;
+            }
+
+            nav ul li{
+                display: inline-block;
+                margin-right: 20px;
+            }
+            .anc{
+                text-decoration: none;
+                color: #555;
+            }
+
+            p{
+                color: #555;
+            }
+
+            .container{
+                max-width: 1300px;
+                margin: auto;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            .header .row{
+                margin-top: 70px;
+            }
+
+            .small-container{
+                max-width: 1080px;
+                margin: 60px;
+                padding: 25px;
+                padding-right: 25px;
+            }
+
+            .col{
+                margin-bottom: 50px;
+                padding: 10px;
+                transition: transform 0.5s;
+            }
+            .col img{
+                height: 250px;
+            }
+
+            .title{
+                text-align: center;
+                margin: 0 auto 80px;
+                position: relative;
+                line-height: 60px;
+                color: #555;
+            }
+
+            h4{
+                color: #555;
+                
+            }
+
+            .col p{
+                font-size: 20px;
+            }
+
+            .rating .fa{
+                color:  #ff523b;
+            }
+            
+            .col:hover{
+                transform: translateY(-5px);
+            }
+
+            .btn{
+                font-size: 20px;
+                border: 2px solid #1f1c1b;
+                width: 120px;
+                height: 40px;
+                text-align: center;
+                line-height: 20px;
+                cursor: pointer;
+            }
+
+            
+
+            .btn:hover{
+                background: #ff523b;
+                color: #fff;
+            }
+
+            h5{
+                padding :20px;
+            }
+
+            
+
+            h4{
+                margin: 20px 0;
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            select{
+                display: block;
+                padding: 10px;
+                margin-top: 20px;
+            }
+
+            input{
+                width: 50px;
+                height: 40px;
+                padding-left: 10px;
+                font-size: 30px;
+                margin-right: 10px;
+                border: 1px solid #ff523b;
+            }
+
+            input:focus{
+                outline: none;
+            }
+
+            
+
+
+            @media only screen and (max-width: 600px){
+                .row{
+                    text-align: center;
+                }
+                .col{
+                    flex-basis: 100%;
+                }
+                .single-product .row{
+                    text-align: left;
+                }
+                .single-product{
+                    padding: 20px 0;
+                }
+                .single-product h1{
+                    font-size: 25px;
+                    line-height: 22px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">  
+            <div style="text-align: right;" class = "navbar">
+                <div >
+                    <img src = "https://i.pinimg.com/originals/27/4c/3a/274c3ad7626992dde987d15a8a84064d.png" height = "125px">
+                    <h4>A Store for farmers</h4>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href= "http://localhost:3000/aboutus"  class="anc">About us</a></li>
+                        <li><a href= "http://localhost:3000/contactus" class="anc">Contact</a></li>
+                        <li><a href= "http://localhost:3000" class="anc">log out</a></li>
+                        <li><a href= "http://localhost:3000/cart" class="anc"><img src = "https://cdn-icons-png.flaticon.com/512/1413/1413908.png" width="30px" height="30px"/></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        
+        
+        <div class="small-container">
+            <h1 class="title">SEEDS</h1>
+
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0251/6942/8589/products/image_1d170a2f-491d-4ac4-b6c3-7ce0cb016c1a_1024x1024@2x.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 2 Kg
+                            <h5>Description</h5>: Basmati Paddy Seeds-Pusa-1509 Variety-2 Kgs.<br> Brand: Mana Velugu Vintage Farmers. Best sowing sowing period is after June 15th and before July 15th for Karif season and Jan 15th to Feb 15th for Rabi season.
+                        </p></nav>
+                        
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="600/-"></div>
+                    <input type="number" value="1" name ="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Basmati Paddy Seeds-Pusa-1509 Variety">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0251/6942/8589/products/image_f6749f7f-9436-4b2d-bbd0-267fec6d9822_360x.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 2 Kg
+                            <h5>Description</h5>: Technically BPT-5204 variety. BPT Rice Seeds, The most famous rice variety from Bapatla, AP. Ours is naturally produced without using any chemical fertilizers.
+                        </p></nav>
+                        
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="200/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Brown Rice Paddy Seeds">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0251/6942/8589/products/image_802603d0-83ac-4a94-b581-96e4a9cf897c_360x.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 Kg
+                            <h5>Description</h5>: Famous as Telangana Sona, For Brown Rice variety RNR-15048-Paddy Seeds-Sugarless, also called as Telangana Sona Masoori. A healthy Friendly White Rice Paddy Seed.
+
+                        </p></nav>
+                        
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="300/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="RNR-15048-Paddy Seeds-Sugarless">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0251/6942/8589/products/image_c12ec05f-3032-4d1b-aa63-3ec34ecde3f1_360x.heic">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 2 Kg
+                            <h5>Description</h5>: Warangal WGL962 Paddy Seeds Packs. WGL-962 variety. 125 Days duration seed to seed. The most famous high yielding paddy from Warangal, Telangana State, AP. This is developed to replace the famous BPT5204 variety, also called as ‘Warangal Vari-2’ .
+                        </p></nav>
+                        
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="525/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="WGL 962 Paddy Seeds">Add to cart</button></form></div>
+                </div>
+            </div>
+
+            
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0251/6942/8589/products/image_190021a2-8a67-4d56-a463-03c686afe0a0_360x.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 Kg
+                            <h5>Description</h5>: MTU-1282 Paddy Seeds-Andhra Pradesh. Marteru Paddy Seeds Packs. Technically MTU1282 variety. 125 days seed to seed duration. The most famous rice high yielding variety from Maruteru, AP.  Ours is naturally produced without using any chemical fertilizers.
+                        </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="275/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="MTU-1282 Paddy Seeds-Andhra Pradesh">Add to cart</button></form></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0251/6942/8589/products/IMG-5867_969d5e17-283e-4b96-9248-6c8f0e6797ff_1024x1024@2x.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 2 Kg
+                            <h5>Description</h5>: Organic In Nature for Millet Seeds, Which Are The Best Suitable For Outdoor Crop Cultivation.
+                            Also Called As Samvat Ke Chawal in  Hindi.</p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="525/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Barnyard Millets Seeds">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0251/6942/8589/products/image_7e43cd96-15e0-40ee-96ae-c8e0b62dfcb9_360x.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 Kg
+                            <h5>Desccription</h5>: Sunn Hemp Seeds-Janumu Vithanalu, from Mana Velugu Vintage Farmers.
+                            Sunnhemp has been used to improve soil properties, reduce soil erosion, conserve soil water, and recycle plant nutrients.
+                            </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="250/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Sunn Hemp Seeds-Janumu Vithanalu">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0251/6942/8589/products/image_9d77eb02-9fdd-415e-92d7-42f517b10d1f_1024x1024@2x.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 Kg
+                            <h5>Description</h5>: "Mana Velugu" branded Whole Red Gram Seeds-Kandulu-1 Kg from "Vintage Farmers", after processing , Also called as 'Arhar Dal',  'Tur Dal' in Hindi, 'Kandi Pappu' in Telugu. Red Gram in English.
+                            It's the whole seed of Red Gram for cultivation as well. Organic in nature.</p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="199/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Whole Red Gram Seeds-Kandulu">Add to cart</button></form></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0251/6942/8589/products/image_fc712390-f653-4371-97d6-6b020d524c4d_360x.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 Kg
+                            <h5>Description</h5>: Edible Desi Green Gram Seeds-Pesalu Unpolished from "Vintage Farmers" Brand "Mana Velugu", Also called as 'Pesalu' in Telugu, whole green moong bean in English.
+                        </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="185/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Desi Green Gram Seeds-Pesalu Unpolished">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0251/6942/8589/products/image_b897aa9b-4955-4795-8fd2-e7f5ca9667e5_360x.heic">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 Kg
+                            <h5>Description</h5>: Black Moong Seeds-Nalla Pesalu Unpolished from "Vintage Farmers" Brand "Mana Velugu", Also called as 'Nalla Pesalu' in Telugu, whole Black Moong sprout beans in English.
+                            Produced in a way where it's more Natural than Organic, which is called as 'PODU Vyavasaayam' in Telugu.
+                            </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="299/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Black Moong Seeds-Nalla Pesalu">Add to cart</button></form></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0251/6942/8589/products/image_d6c9b436-43e0-4aa5-a1cd-0bcba995c12b_360x.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 Kg
+                            <h5>Description</h5>: Edible Desi Black Gram Urad-Unpolished Dal from "Vintage Farmers" Brand "Mana Velugu", Also called as 'Minumulu' in Telugu and Urad Kali Dal in Hindi.
+                            More Natural Than Organic.                            
+                            </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="185/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Desi Black Gram Urad-Unpolished">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0251/6942/8589/products/image_06da0873-671e-4c28-a2f6-ad05030c9845_360x.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 Kg
+                            <h5>Description</h5>: Edible Desi Black Gram Urad-Unpolished Dal from "Vintage Farmers" Brand "Mana Velugu", Also called as 'Minumulu' in Telugu, Split black moong bean in English. Best in taste when it’s with outer black layer, mainly used for Dosa, Idli, Papads etc.
+                            More Natural Than Organic.                                                        
+                            </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="210/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Desi Split Black Gram Urad-Unpolished-Organic">Add to cart</button></form></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://img2.exportersindia.com/product_images/bc-full/2021/10/8565115/groundnut-seeds-80-90-1634899576-6048670.jpeg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 Kg
+                            <h5>Description</h5>: Bombay Super Seeds is one of the topmost leading groundnut seed processors in India. We are one of the most preferred groundnut seeds exporters in the country.                                                       
+                            </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="94/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Ground nut">Add to cart</button></form></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://krishibazaar.in/image/cache/catalog/Goldi%20Agro/Goldi-333-Front-570x570.jpeg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 500 Grams
+                            <h5>Description</h5>: Brand:	Krishna Seeds Farm (Goldi Agro)
+                            This hybrid is highly adoptive to almost all cotton-growing states as well as suitable for cultivation under varied soil types, irrigation conditions, and agronomic practices.
+                            </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="790/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Goldi-333 BGII Hybrid Cotton Seeds">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0920/8638/products/navtej-chilli-mahyco_428x583.png">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 kg
+                            <h5>Description</h5>: drought and powdery mildew tolerant chilli hybrid with medium to high pungency and long shelf life. Fruit length is 8 – 10 cm and fruit diameter is 0.8 – 0.9 cm. Fruit is dark green in colour when immature and turns glossy red on maturity, fruit surface has moderate wrinkles.
+                        </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="620/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Navtej F1 Hybrid Chilli/Hotpepper (Mayhco)">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0920/8638/products/arya_tomato-removebg-preview_433x577.png">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 kg
+                            <h5>Description</h5>: Semi Determinate
+                            Maturity- 65-68 DAT
+                            Shape- Flat round
+                            Fruit Weight- 80-90 gm
+                            Good heat Set
+                            Intermediate ToLCV resitance
+                            Unifor Fruit
+                            Good Transportability </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="539/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Arya F1 Hybrid Tomato (BASF | Nunhems)">Add to cart</button></form></div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0920/8638/products/spinach_455x455.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 kg
+                            <h5>Description</h5>: Broad Leaf Palak (Spinach) Seeds </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="60/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Broad Leaf Palak (Spinach) Seeds">Add to cart</button></form></div>
+                </div>
+            </div>
+
+            <h2>More seeds will be added soon</h2>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: antiquewhite;
+            }
+
+            h1{
+                font-size: 50px;
+                text-align: center;
+            }
+            input[type= submit]{
+                padding: 5px 12px;
+                background-color: green;
+                color:white;
+            }
+            input[type = submit]:hover{
+                background-color:goldenrod;
+            }
+
+            input[type=text],input[type=email],textarea {
+                width: 50%;
+                padding: 12px;
+                border: 1px solid rgb(122, 78, 78);
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div >
+            <h1>Farmer Store</h1>
+            <div align="center">
+                    <img src = "https://i.pinimg.com/originals/27/4c/3a/274c3ad7626992dde987d15a8a84064d.png" height = "125px">
+                    
+                    <h4>A Store for farmers</h4>
+            </div>
+        </div>
+        
+        <div align="center" >
+             <form action = "/detailssubmit" method = "GET">
+                <label for="Name">Name : </label>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <br><br>
+    
+                <label>Phone Number : </label>
+                <input type="text" name="phnno" placeholder="Phone Number" required>
+                <br><br>
+    
+                <label>Address : </label>
+                <textarea type= "textarea" style="height: 200px;" placeholder="Address to deliver" name= "address" required></textarea>
+                <br><br>
+    
+                <input type = "submit" value="Complete Shopping">
+            </form>
+        </div>
+        
+
+    </body>
+
+</html>

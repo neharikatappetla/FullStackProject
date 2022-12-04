@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: antiquewhite;
+            }
+            .navbar{
+                display: flex;
+                align-items: center;
+                padding: 20px;
+            }
+
+            nav{
+                flex: 1;
+            }
+
+            nav ul{
+                display: inline-block;
+                list-style-type: none;
+            }
+
+            nav ul li{
+                display: inline-block;
+                margin-right: 20px;
+            }
+            .anc{
+                text-decoration: none;
+                color: #555;
+            }
+
+            p{
+                color: #555;
+            }
+
+            .container{
+                max-width: 1300px;
+                margin: auto;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            .header .row{
+                margin-top: 70px;
+            }
+
+            .small-container{
+                max-width: 1080px;
+                margin: 60px;
+                padding: 25px;
+                padding-right: 25px;
+            }
+
+            .col{
+                margin-bottom: 50px;
+                padding: 10px;
+                transition: transform 0.5s;
+            }
+            .col img{
+                height: 250px;
+            }
+
+            .title{
+                text-align: center;
+                margin: 0 auto 80px;
+                position: relative;
+                line-height: 60px;
+                color: #555;
+            }
+
+            h4{
+                color: #555;
+                
+            }
+
+            .col p{
+                font-size: 20px;
+            }
+
+            .rating .fa{
+                color:  #ff523b;
+            }
+            
+            .col:hover{
+                transform: translateY(-5px);
+            }
+
+            .btn{
+                font-size: 20px;
+                border: 2px solid #1f1c1b;
+                width: 120px;
+                height: 40px;
+                text-align: center;
+                line-height: 20px;
+                cursor: pointer;
+            }
+
+            
+
+            .btn:hover{
+                background: #ff523b;
+                color: #fff;
+            }
+
+            
+
+            
+
+            h4{
+                margin: 20px 0;
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            select{
+                display: block;
+                padding: 10px;
+                margin-top: 20px;
+            }
+
+            input{
+                width: 50px;
+                height: 40px;
+                padding-left: 10px;
+                font-size: 30px;
+                margin-right: 10px;
+                border: 1px solid #ff523b;
+            }
+
+            input:focus{
+                outline: none;
+            }
+
+            
+
+
+            @media only screen and (max-width: 600px){
+                .row{
+                    text-align: center;
+                }
+                .col{
+                    flex-basis: 100%;
+                }
+                .single-product .row{
+                    text-align: left;
+                }
+                .single-product{
+                    padding: 20px 0;
+                }
+                .single-product h1{
+                    font-size: 25px;
+                    line-height: 22px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">  
+            <div style="text-align: right;" class = "navbar">
+                <div >
+                    <img src = "https://i.pinimg.com/originals/27/4c/3a/274c3ad7626992dde987d15a8a84064d.png" height = "125px">
+                    <h4>A Store for farmers</h4>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href= "http://localhost:3000/aboutus"  class="anc">About us</a></li>
+                        <li><a href= "http://localhost:3000/contactus" class="anc">Contact</a></li>
+                        <li><a href= "http://localhost:3000" class="anc">log out</a></li>
+                        <li><a href= "http://localhost:3000/cart" class="anc"><img src = "https://cdn-icons-png.flaticon.com/512/1413/1413908.png" width="30px" height="30px"/></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        
+        
+        <div class="small-container">
+            <h1 class="title">FERTILIZERS</h1>
+
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0552/5644/9180/products/NeemCoatedUrea.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 kg
+                            <h5>Description</h5>: Urea fertilizer provides nitrogen, which helps in green leafy growth that not only makes your garden look lush, but is also for photosynthesis 100% Water Soluble Nitrogen fertilizer
+                        </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="599/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Urea fertilizer Soil Application and Water Soluble for All Plants and Garden">Add to cart</button></form></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0552/5644/9180/products/AllPurposeImportedDAPFertilizer-500gm1_23e1c34f-ef3c-4ef9-a944-fe04a9435526.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 5 kg
+                            <h5>Description</h5>: Diammonium phosphate (DAP) is the world’s most widely used phosphorus fertilizer. It’s made from two common constituents in the fertilizer industry, and its relatively high nutrient content and excellent physical properties make it a popular choice in farming and home gardening. DAP is a balanced fertilizer. Most common commercial fertilizers contain phosphate, which is an essential nutrient for stimulating root growth and plant health.
+                        </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="549/-"></div>
+                    <input type="number" value="1" nmae="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="All Purpose DAP Fertilizer for Home and Garden Plants">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0552/5644/9180/products/UreaWaterSolubleFertilizers.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 3 kg
+                            <h5>Desccription</h5>: Urea fertilizer provides nitrogen, which helps in green leafy growth that not only makes your garden look lush, but is also for photosynthesis 100% Water Soluble Nitrogen fertilizer
+                        </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="449/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="All Purpose Urea Water Soluble Fertilizers">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0451/1101/7626/products/PicsArt_12-28-05.14.06_1_500x.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 kg
+                            <h5>Description</h5>: Must-have for nitrogenfixation and production of plant growth hormones.This product can be used for All crops, vegetable and flowering plants.
+                        </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="730/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Azospirillum Nitrogen Fixing Biofertilizer">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0597/4507/5394/products/NanoFet17-44-00_1024x1024.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 kg
+                            <h5>Description</h5>: GEOLIFE NANO NPK 17:44:00 is a 100 % water soluble fertilizer provides all the essential nutrients by plant – Nitrogen (N), Phosphorous(P) and Potassium (K).The fertilizer is 100% water-soluble and It is Useful for all crops.
+                        </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="1200/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Geolife NanoFert 17:44:00 Nitrogen, Phosphorous & Potassium Water Soluble Fertilizer">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0597/4507/5394/products/NanoFet00-00-50_1024x1024.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 kg
+                            <h5>Description</h5>: GEOLIFE NPK 00-00-50 is a water soluble Potassium Sulphate (SOP) fertilizer which is totally water soluble in crystalline form. It contains high quality macro and essential nutrients and chloride free ingredients. This can be applied to the crop by fertigation or through foliar spraying.
+                        </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="820/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Geolife NanoFert 00:00:50 Potassium Sulphate (SOP) Water Soluble Fertilizer">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0597/4507/5394/products/Nanofert00-52-34_1024x1024.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 kg
+                            <h5>Description</h5>: GEOLIFE NANO NPK 00:52:34 is a 100 % water soluble fertilizer. The fertilizer is 100% water-soluble and It is Useful for all crops.
+                        </p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="1166/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Geolife Nanofert 00:52:34 Potassium & Phosphorus Water Soluble Fertilizer">Add to cart</button></form></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0451/1101/7626/products/PicsArt_12-28-05.22.58_1_500x.jpg">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 kg
+                            <h5>Description</h5>: Environmental friendly source of phosphorous</p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="230/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Phospho Bacteria Biofertilizer">Add to cart</button></form></div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col">
+                    <div class = "navbar">
+                        <img src="https://cdn.shopify.com/s/files/1/0722/2059/products/TB6_400x.png">
+                    
+                        <nav> <p style="padding: 20px;">
+                            <h5>Quantity</h5> : 1 Litre
+                            <h5>Description</h5>: Composition:
+                            Phosphorus - 13 to14%
+                            Protein Hydrolysate - 40%
+                            Nitrogen - 5 to 6%
+                            Organic carbon - less than 50%
+                            Other Nutrients - 1 to 2%
+                            Address the Phosphorus deficiency in all crop.
+                            Promote the development of healthy primary roots and their subsequent branches.
+                            Application Dosage:
+                            Foliar application 2-3 ml/ Liter of water
+                            Drip Irrigation 1-1.5 liter/Acre</p></nav>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                    <form action="addToCart" method ="GET">
+                    COST: <input type = "text" style = "width:80px; font-weight:bold;" name = "cost" value="559/-"></div>
+                    <input type="number" value="1" name="nm"><br>
+                        <button type="submit" class="btn btn-outline-success" name="item" value ="Thyla P (Phosphorus Deficiency)">Add to cart</button></form></div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </body>
+</html>
